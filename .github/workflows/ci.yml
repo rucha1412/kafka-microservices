@@ -21,15 +21,15 @@ jobs:
 
       - name: Build Order Service
         run: |
-          cd order-service
+          cd orderservice
           mvn clean package
 
       - name: Build Payment Service
         run: |
-          cd payment-service
+          cd paymentservice
           mvn clean package
 
       - name: Build Notification Service
         run: |
-          cd notification-service
+          cd notificationservice
           mvn clean package
