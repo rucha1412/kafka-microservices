@@ -35,10 +35,10 @@ jobs:
           mvn clean verify -DskipTests
 
       - name: Build Order Service Docker Image
-        run: docker build -t order-service:latest ./order-service
+        run: docker build -t order-service:latest ./orderservice
 
       - name: Build Payment Service Docker Image
-        run: docker build -t payment-service:latest ./payment-service
+        run: docker build -t payment-service:latest ./paymentservice
 
       - name: Build Notification Service Docker Image
-        run: docker build -t notification-service:latest ./notification-service
+        run: docker build -t notification-service:latest ./notificationservice
