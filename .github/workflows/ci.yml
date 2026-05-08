@@ -33,3 +33,12 @@ jobs:
         run: |
           cd notificationservice
           mvn clean verify -DskipTests
+
+      - name: Build Order Service Docker Image
+        run: docker build -t order-service:latest ./order-service
+
+      - name: Build Payment Service Docker Image
+        run: docker build -t payment-service:latest ./payment-service
+
+      - name: Build Notification Service Docker Image
+        run: docker build -t notification-service:latest ./notification-service
