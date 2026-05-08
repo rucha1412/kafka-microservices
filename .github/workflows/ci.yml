@@ -22,14 +22,14 @@ jobs:
       - name: Build Order Service
         run: |
           cd orderservice
-          mvn clean package -DskipTests
+          mvn clean verify -DskipTests
 
       - name: Build Payment Service
         run: |
           cd paymentservice
-          mvn clean package -DskipTests
+          mvn clean verify -DskipTests
 
       - name: Build Notification Service
         run: |
           cd notificationservice
-          mvn clean package -DskipTests
+          mvn clean verify -DskipTests
